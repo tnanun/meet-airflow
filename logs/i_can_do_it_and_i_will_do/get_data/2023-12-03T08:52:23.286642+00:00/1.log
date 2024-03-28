@@ -1,0 +1,42 @@
+[2023-12-03 08:52:24,886] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-03T08:52:23.286642+00:00 [queued]>
+[2023-12-03 08:52:24,905] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-03T08:52:23.286642+00:00 [queued]>
+[2023-12-03 08:52:24,905] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-03 08:52:24,905] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2023-12-03 08:52:24,905] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-03 08:52:24,922] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): get_data> on 2023-12-03T08:52:23.286642+00:00
+[2023-12-03 08:52:24,926] {standard_task_runner.py:52} INFO - Started process 570 to run task
+[2023-12-03 08:52:24,931] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'i_can_do_it_and_i_will_do', 'get_data', '2023-12-03T08:52:23.286642+00:00', '--job-id', '33', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpoa01q32p', '--error-file', '/tmp/tmpwuum1_e3']
+[2023-12-03 08:52:24,934] {standard_task_runner.py:77} INFO - Job 33: Subtask get_data
+[2023-12-03 08:52:24,981] {logging_mixin.py:109} INFO - Running <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-03T08:52:23.286642+00:00 [running]> on host 57976b4abeb9
+[2023-12-03 08:52:25,094] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=i_can_do_it_and_i_will_do
+AIRFLOW_CTX_TASK_ID=get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-03T08:52:23.286642+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-03T08:52:23.286642+00:00
+[2023-12-03 08:52:30,891] {taskinstance.py:1463} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1165, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1283, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1313, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first_dag.py", line 17, in get_data
+    df.to_csv(output_meet, index = False)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 3170, in to_csv
+    formatter.save()
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/formats/csvs.py", line 190, in save
+    compression=dict(self.compression_args, method=self.compression),
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/common.py", line 493, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, errors=errors, newline="")
+PermissionError: [Errno 13] Permission denied: '/home/tnanun/airflow-meet/data/data_meet.csv'
+[2023-12-03 08:52:30,978] {taskinstance.py:1513} INFO - Marking task as FAILED. dag_id=i_can_do_it_and_i_will_do, task_id=get_data, execution_date=20231203T085223, start_date=20231203T085224, end_date=20231203T085230
+[2023-12-03 08:52:31,129] {local_task_job.py:151} INFO - Task exited with return code 1
+[2023-12-03 08:52:31,167] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

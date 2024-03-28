@@ -1,0 +1,65 @@
+[2023-11-21 09:42:39,127] {processor.py:162} INFO - Started process (PID=171) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:42:39,175] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:42:39,176] {logging_mixin.py:109} INFO - [2023-11-21 09:42:39,176] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:42:39,374] {processor.py:623} INFO - DAG(s) dict_keys(['exercise3_fan_in_dag']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:42:57,823] {logging_mixin.py:109} INFO - [2023-11-21 09:42:57,822] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:42:57,834] {logging_mixin.py:109} INFO - [2023-11-21 09:42:57,833] {dag.py:1853} INFO - Creating ORM DAG for exercise3_fan_in_dag
+[2023-11-21 09:42:57,837] {logging_mixin.py:109} INFO - [2023-11-21 09:42:57,837] {dag.py:2287} INFO - Setting next_dagrun for exercise3_fan_in_dag to None
+[2023-11-21 09:42:57,933] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 18.926 seconds
+[2023-11-21 09:43:28,260] {processor.py:162} INFO - Started process (PID=534) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:28,261] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:43:28,262] {logging_mixin.py:109} INFO - [2023-11-21 09:43:28,262] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:28,270] {processor.py:623} INFO - DAG(s) dict_keys(['exercise3_fan_in_dag']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:28,293] {logging_mixin.py:109} INFO - [2023-11-21 09:43:28,292] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:43:28,309] {logging_mixin.py:109} INFO - [2023-11-21 09:43:28,309] {dag.py:2287} INFO - Setting next_dagrun for exercise3_fan_in_dag to None
+[2023-11-21 09:43:28,405] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.147 seconds
+[2023-11-21 09:43:58,838] {processor.py:162} INFO - Started process (PID=724) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:58,839] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:43:58,840] {logging_mixin.py:109} INFO - [2023-11-21 09:43:58,840] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:58,849] {processor.py:623} INFO - DAG(s) dict_keys(['exercise3_fan_in_dag']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:43:58,867] {logging_mixin.py:109} INFO - [2023-11-21 09:43:58,867] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:43:58,879] {logging_mixin.py:109} INFO - [2023-11-21 09:43:58,879] {dag.py:2287} INFO - Setting next_dagrun for exercise3_fan_in_dag to None
+[2023-11-21 09:43:58,961] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.125 seconds
+[2023-11-21 09:44:29,382] {processor.py:162} INFO - Started process (PID=904) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:29,383] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:44:29,384] {logging_mixin.py:109} INFO - [2023-11-21 09:44:29,384] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:29,392] {processor.py:623} INFO - DAG(s) dict_keys(['exercise3_fan_in_dag']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:29,415] {logging_mixin.py:109} INFO - [2023-11-21 09:44:29,415] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:44:29,428] {logging_mixin.py:109} INFO - [2023-11-21 09:44:29,428] {dag.py:2287} INFO - Setting next_dagrun for exercise3_fan_in_dag to None
+[2023-11-21 09:44:29,443] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.064 seconds
+[2023-11-21 09:44:59,668] {processor.py:162} INFO - Started process (PID=1094) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:59,669] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:44:59,669] {logging_mixin.py:109} INFO - [2023-11-21 09:44:59,669] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:59,677] {processor.py:623} INFO - DAG(s) dict_keys(['exercise3_fan_in_dag']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:44:59,694] {logging_mixin.py:109} INFO - [2023-11-21 09:44:59,693] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:44:59,703] {logging_mixin.py:109} INFO - [2023-11-21 09:44:59,703] {dag.py:2287} INFO - Setting next_dagrun for exercise3_fan_in_dag to None
+[2023-11-21 09:44:59,714] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.048 seconds
+[2023-11-21 09:46:15,678] {processor.py:162} INFO - Started process (PID=164) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:15,680] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:46:15,681] {logging_mixin.py:109} INFO - [2023-11-21 09:46:15,681] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:15,698] {processor.py:623} INFO - DAG(s) dict_keys(['i_can_do_it_and_i_will_do']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:20,774] {logging_mixin.py:109} INFO - [2023-11-21 09:46:20,773] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:46:20,784] {logging_mixin.py:109} INFO - [2023-11-21 09:46:20,783] {dag.py:1853} INFO - Creating ORM DAG for i_can_do_it_and_i_will_do
+[2023-11-21 09:46:20,787] {logging_mixin.py:109} INFO - [2023-11-21 09:46:20,787] {dag.py:2287} INFO - Setting next_dagrun for i_can_do_it_and_i_will_do to None
+[2023-11-21 09:46:20,809] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 5.134 seconds
+[2023-11-21 09:46:50,994] {processor.py:162} INFO - Started process (PID=525) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:50,995] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:46:50,996] {logging_mixin.py:109} INFO - [2023-11-21 09:46:50,996] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:51,004] {processor.py:623} INFO - DAG(s) dict_keys(['i_can_do_it_and_i_will_do']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:46:51,031] {logging_mixin.py:109} INFO - [2023-11-21 09:46:51,031] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:46:51,048] {logging_mixin.py:109} INFO - [2023-11-21 09:46:51,048] {dag.py:2287} INFO - Setting next_dagrun for i_can_do_it_and_i_will_do to None
+[2023-11-21 09:46:51,132] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.140 seconds
+[2023-11-21 09:47:21,336] {processor.py:162} INFO - Started process (PID=706) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:21,337] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:47:21,337] {logging_mixin.py:109} INFO - [2023-11-21 09:47:21,337] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:21,344] {processor.py:623} INFO - DAG(s) dict_keys(['i_can_do_it_and_i_will_do']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:21,363] {logging_mixin.py:109} INFO - [2023-11-21 09:47:21,363] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:47:21,373] {logging_mixin.py:109} INFO - [2023-11-21 09:47:21,373] {dag.py:2287} INFO - Setting next_dagrun for i_can_do_it_and_i_will_do to None
+[2023-11-21 09:47:21,382] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.048 seconds
+[2023-11-21 09:47:51,918] {processor.py:162} INFO - Started process (PID=886) to work on /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:51,920] {processor.py:613} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2023-11-21 09:47:51,921] {logging_mixin.py:109} INFO - [2023-11-21 09:47:51,920] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:51,931] {processor.py:623} INFO - DAG(s) dict_keys(['i_can_do_it_and_i_will_do']) retrieved from /opt/airflow/dags/first_dag.py
+[2023-11-21 09:47:51,954] {logging_mixin.py:109} INFO - [2023-11-21 09:47:51,954] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-11-21 09:47:51,965] {logging_mixin.py:109} INFO - [2023-11-21 09:47:51,965] {dag.py:2287} INFO - Setting next_dagrun for i_can_do_it_and_i_will_do to None
+[2023-11-21 09:47:51,975] {processor.py:170} INFO - Processing /opt/airflow/dags/first_dag.py took 0.060 seconds

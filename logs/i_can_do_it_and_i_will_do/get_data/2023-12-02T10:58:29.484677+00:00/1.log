@@ -1,0 +1,23 @@
+[2023-12-02 10:58:30,727] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-02T10:58:29.484677+00:00 [queued]>
+[2023-12-02 10:58:30,737] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-02T10:58:29.484677+00:00 [queued]>
+[2023-12-02 10:58:30,738] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-02 10:58:30,738] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2023-12-02 10:58:30,738] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-02 10:58:30,752] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): get_data> on 2023-12-02T10:58:29.484677+00:00
+[2023-12-02 10:58:30,756] {standard_task_runner.py:52} INFO - Started process 3206 to run task
+[2023-12-02 10:58:30,758] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'i_can_do_it_and_i_will_do', 'get_data', '2023-12-02T10:58:29.484677+00:00', '--job-id', '12', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp2zihvqs3', '--error-file', '/tmp/tmpja4zjr6f']
+[2023-12-02 10:58:30,760] {standard_task_runner.py:77} INFO - Job 12: Subtask get_data
+[2023-12-02 10:58:30,794] {logging_mixin.py:109} INFO - Running <TaskInstance: i_can_do_it_and_i_will_do.get_data 2023-12-02T10:58:29.484677+00:00 [running]> on host b71035c8e668
+[2023-12-02 10:58:30,839] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=i_can_do_it_and_i_will_do
+AIRFLOW_CTX_TASK_ID=get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-02T10:58:29.484677+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-02T10:58:29.484677+00:00
+[2023-12-02 10:58:32,444] {logging_mixin.py:109} INFO - D:\ENT\4.2\data_meet.csv
+[2023-12-02 10:58:32,444] {python.py:151} INFO - Done. Returned value was: None
+[2023-12-02 10:58:32,453] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=i_can_do_it_and_i_will_do, task_id=get_data, execution_date=20231202T105829, start_date=20231202T105830, end_date=20231202T105832
+[2023-12-02 10:58:32,499] {local_task_job.py:151} INFO - Task exited with return code 0
+[2023-12-02 10:58:32,520] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

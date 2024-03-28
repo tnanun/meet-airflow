@@ -1,0 +1,40 @@
+[2024-03-01 14:51:22,350] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting.clean_answers 2024-03-01T13:00:00+00:00 [queued]>
+[2024-03-01 14:51:22,371] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting.clean_answers 2024-03-01T13:00:00+00:00 [queued]>
+[2024-03-01 14:51:22,372] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-01 14:51:22,372] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2024-03-01 14:51:22,372] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-01 14:51:22,382] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): clean_answers> on 2024-03-01T13:00:00+00:00
+[2024-03-01 14:51:22,388] {standard_task_runner.py:52} INFO - Started process 484 to run task
+[2024-03-01 14:51:22,391] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting', 'clean_answers', '2024-03-01T13:00:00+00:00', '--job-id', '178', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpt4z6r_q3', '--error-file', '/tmp/tmp2dsnzlkg']
+[2024-03-01 14:51:22,394] {standard_task_runner.py:77} INFO - Job 178: Subtask clean_answers
+[2024-03-01 14:51:22,441] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting.clean_answers 2024-03-01T13:00:00+00:00 [running]> on host b272d77a87bd
+[2024-03-01 14:51:22,521] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting
+AIRFLOW_CTX_TASK_ID=clean_answers
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-01T13:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-01T13:00:00+00:00
+[2024-03-01 14:51:22,537] {taskinstance.py:1463} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1165, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1283, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1313, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first_dag.py", line 45, in clean_answer
+    df_count_per_meet = pd.DataFrame(df.groupby('meetId')['userId'].nunique()).rename(columns={"userId": "noatt"})
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/groupby/generic.py", line 1610, in __getitem__
+    return super().__getitem__(key)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/base.py", line 228, in __getitem__
+    raise KeyError(f"Column not found: {key}")
+KeyError: 'Column not found: userId'
+[2024-03-01 14:51:22,541] {taskinstance.py:1513} INFO - Marking task as FAILED. dag_id=meeting, task_id=clean_answers, execution_date=20240301T130000, start_date=20240301T145122, end_date=20240301T145122
+[2024-03-01 14:51:22,604] {local_task_job.py:151} INFO - Task exited with return code 1
+[2024-03-01 14:51:22,634] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

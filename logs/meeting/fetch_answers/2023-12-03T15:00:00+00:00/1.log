@@ -1,0 +1,23 @@
+[2023-12-06 07:46:02,450] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting.fetch_answers 2023-12-03T15:00:00+00:00 [queued]>
+[2023-12-06 07:46:02,464] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting.fetch_answers 2023-12-03T15:00:00+00:00 [queued]>
+[2023-12-06 07:46:02,465] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-06 07:46:02,465] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2023-12-06 07:46:02,465] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-06 07:46:02,485] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): fetch_answers> on 2023-12-03T15:00:00+00:00
+[2023-12-06 07:46:02,491] {standard_task_runner.py:52} INFO - Started process 287 to run task
+[2023-12-06 07:46:02,495] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting', 'fetch_answers', '2023-12-03T15:00:00+00:00', '--job-id', '84', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpg947gxa5', '--error-file', '/tmp/tmpr7rrik4j']
+[2023-12-06 07:46:02,498] {standard_task_runner.py:77} INFO - Job 84: Subtask fetch_answers
+[2023-12-06 07:46:02,556] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting.fetch_answers 2023-12-03T15:00:00+00:00 [running]> on host 290bde24ac9b
+[2023-12-06 07:46:02,638] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting
+AIRFLOW_CTX_TASK_ID=fetch_answers
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-03T15:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-03T15:00:00+00:00
+[2023-12-06 07:46:06,725] {logging_mixin.py:109} INFO - Output to /home/tnanun/***-meet/data/data_ans.csv yoyoyoyoyoyo
+[2023-12-06 07:46:06,726] {python.py:151} INFO - Done. Returned value was: None
+[2023-12-06 07:46:06,734] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=meeting, task_id=fetch_answers, execution_date=20231203T150000, start_date=20231206T074602, end_date=20231206T074606
+[2023-12-06 07:46:06,763] {local_task_job.py:151} INFO - Task exited with return code 0
+[2023-12-06 07:46:06,788] {local_task_job.py:261} INFO - 1 downstream tasks scheduled from follow-on schedule check

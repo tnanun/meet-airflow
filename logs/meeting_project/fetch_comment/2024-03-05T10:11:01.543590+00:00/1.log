@@ -1,0 +1,23 @@
+[2024-03-05 10:12:41,417] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.fetch_comment 2024-03-05T10:11:01.543590+00:00 [queued]>
+[2024-03-05 10:12:41,468] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.fetch_comment 2024-03-05T10:11:01.543590+00:00 [queued]>
+[2024-03-05 10:12:41,469] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:12:41,469] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2024-03-05 10:12:41,470] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:12:41,493] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): fetch_comment> on 2024-03-05T10:11:01.543590+00:00
+[2024-03-05 10:12:41,510] {standard_task_runner.py:52} INFO - Started process 1358 to run task
+[2024-03-05 10:12:41,523] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting_project', 'fetch_comment', '2024-03-05T10:11:01.543590+00:00', '--job-id', '247', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp14b6n81k', '--error-file', '/tmp/tmpwmvbr4_q']
+[2024-03-05 10:12:41,539] {standard_task_runner.py:77} INFO - Job 247: Subtask fetch_comment
+[2024-03-05 10:12:41,720] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting_project.fetch_comment 2024-03-05T10:11:01.543590+00:00 [running]> on host 4622d7b8f726
+[2024-03-05 10:12:41,839] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting_project
+AIRFLOW_CTX_TASK_ID=fetch_comment
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-05T10:11:01.543590+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-05T10:11:01.543590+00:00
+[2024-03-05 10:12:42,877] {logging_mixin.py:109} INFO - Output to /home/tnanun/***-meet/data/data_com.csv yoyoyoyoyoyo
+[2024-03-05 10:12:42,877] {python.py:151} INFO - Done. Returned value was: None
+[2024-03-05 10:12:42,893] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=meeting_project, task_id=fetch_comment, execution_date=20240305T101101, start_date=20240305T101241, end_date=20240305T101242
+[2024-03-05 10:12:42,943] {local_task_job.py:151} INFO - Task exited with return code 0
+[2024-03-05 10:12:42,989] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

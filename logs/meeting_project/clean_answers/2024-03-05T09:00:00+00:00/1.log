@@ -1,0 +1,47 @@
+[2024-03-05 10:12:44,055] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.clean_answers 2024-03-05T09:00:00+00:00 [queued]>
+[2024-03-05 10:12:44,075] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.clean_answers 2024-03-05T09:00:00+00:00 [queued]>
+[2024-03-05 10:12:44,076] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:12:44,076] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2024-03-05 10:12:44,076] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:12:44,088] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): clean_answers> on 2024-03-05T09:00:00+00:00
+[2024-03-05 10:12:44,094] {standard_task_runner.py:52} INFO - Started process 1466 to run task
+[2024-03-05 10:12:44,097] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting_project', 'clean_answers', '2024-03-05T09:00:00+00:00', '--job-id', '259', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpvofmez6v', '--error-file', '/tmp/tmppvpxrri5']
+[2024-03-05 10:12:44,100] {standard_task_runner.py:77} INFO - Job 259: Subtask clean_answers
+[2024-03-05 10:12:44,155] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting_project.clean_answers 2024-03-05T09:00:00+00:00 [running]> on host 4622d7b8f726
+[2024-03-05 10:12:44,230] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting_project
+AIRFLOW_CTX_TASK_ID=clean_answers
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-05T09:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-05T09:00:00+00:00
+[2024-03-05 10:12:44,234] {taskinstance.py:1463} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1165, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1283, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1313, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first_dag.py", line 60, in clean_answer
+    df = pd.read_csv(output_ans)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 540, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2024-03-05 10:12:44,238] {taskinstance.py:1513} INFO - Marking task as FAILED. dag_id=meeting_project, task_id=clean_answers, execution_date=20240305T090000, start_date=20240305T101244, end_date=20240305T101244
+[2024-03-05 10:12:44,269] {local_task_job.py:151} INFO - Task exited with return code 1
+[2024-03-05 10:12:44,309] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

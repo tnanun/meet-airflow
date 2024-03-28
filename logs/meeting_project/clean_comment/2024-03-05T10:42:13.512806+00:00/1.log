@@ -1,0 +1,23 @@
+[2024-03-05 10:42:17,553] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.clean_comment 2024-03-05T10:42:13.512806+00:00 [queued]>
+[2024-03-05 10:42:17,577] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project.clean_comment 2024-03-05T10:42:13.512806+00:00 [queued]>
+[2024-03-05 10:42:17,578] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:42:17,578] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2024-03-05 10:42:17,578] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-05 10:42:17,591] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): clean_comment> on 2024-03-05T10:42:13.512806+00:00
+[2024-03-05 10:42:17,596] {standard_task_runner.py:52} INFO - Started process 14968 to run task
+[2024-03-05 10:42:17,599] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting_project', 'clean_comment', '2024-03-05T10:42:13.512806+00:00', '--job-id', '291', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpexh4kwel', '--error-file', '/tmp/tmpk8swbvff']
+[2024-03-05 10:42:17,602] {standard_task_runner.py:77} INFO - Job 291: Subtask clean_comment
+[2024-03-05 10:42:17,653] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting_project.clean_comment 2024-03-05T10:42:13.512806+00:00 [running]> on host 4622d7b8f726
+[2024-03-05 10:42:17,725] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting_project
+AIRFLOW_CTX_TASK_ID=clean_comment
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-05T10:42:13.512806+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-05T10:42:13.512806+00:00
+[2024-03-05 10:42:17,751] {logging_mixin.py:109} INFO - Output to /home/tnanun/***-meet/data/data_com.csv yoyoyoyoyoyo
+[2024-03-05 10:42:17,751] {python.py:151} INFO - Done. Returned value was: None
+[2024-03-05 10:42:17,763] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=meeting_project, task_id=clean_comment, execution_date=20240305T104213, start_date=20240305T104217, end_date=20240305T104217
+[2024-03-05 10:42:17,812] {local_task_job.py:151} INFO - Task exited with return code 0
+[2024-03-05 10:42:17,846] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

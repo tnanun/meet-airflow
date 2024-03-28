@@ -1,0 +1,23 @@
+[2024-03-11 02:30:44,811] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project492.fetch_meeting 2024-03-11T02:30:43.192787+00:00 [queued]>
+[2024-03-11 02:30:44,830] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: meeting_project492.fetch_meeting 2024-03-11T02:30:43.192787+00:00 [queued]>
+[2024-03-11 02:30:44,831] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-11 02:30:44,831] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2024-03-11 02:30:44,831] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-11 02:30:44,842] {taskinstance.py:1115} INFO - Executing <Task(PythonOperator): fetch_meeting> on 2024-03-11T02:30:43.192787+00:00
+[2024-03-11 02:30:44,847] {standard_task_runner.py:52} INFO - Started process 9562 to run task
+[2024-03-11 02:30:44,849] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'meeting_project492', 'fetch_meeting', '2024-03-11T02:30:43.192787+00:00', '--job-id', '481', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp0xk61t_0', '--error-file', '/tmp/tmpy19yt7wi']
+[2024-03-11 02:30:44,856] {standard_task_runner.py:77} INFO - Job 481: Subtask fetch_meeting
+[2024-03-11 02:30:44,909] {logging_mixin.py:109} INFO - Running <TaskInstance: meeting_project492.fetch_meeting 2024-03-11T02:30:43.192787+00:00 [running]> on host fe457b6d1f83
+[2024-03-11 02:30:44,961] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=meeting_project492
+AIRFLOW_CTX_TASK_ID=fetch_meeting
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-11T02:30:43.192787+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-11T02:30:43.192787+00:00
+[2024-03-11 02:30:46,790] {logging_mixin.py:109} INFO - Output to /home/tnanun/***-meet/data/data_meet.csv yoyoyoyoyoyo
+[2024-03-11 02:30:46,790] {python.py:151} INFO - Done. Returned value was: None
+[2024-03-11 02:30:46,799] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=meeting_project492, task_id=fetch_meeting, execution_date=20240311T023043, start_date=20240311T023044, end_date=20240311T023046
+[2024-03-11 02:30:46,830] {local_task_job.py:151} INFO - Task exited with return code 0
+[2024-03-11 02:30:46,856] {local_task_job.py:261} INFO - 1 downstream tasks scheduled from follow-on schedule check
