@@ -15,9 +15,8 @@ output_obj = "/home/tnanun/airflow-meet/data/data_obj.csv"
 output_final = "/home/tnanun/airflow-meet/data/final_dataset.csv"
 
 def fetch_data(table, output):
-  # con = create_engine("postgresql://postgres:12#3$45)6G88@db.oymrhotncbnylwsroxra.supabase.co:5432/postgres")
-  con = create_engine("postgres://postgres.oymrhotncbnylwsroxra:12#3$45)6G88@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres")
-  ## postgres://postgres.oymrhotncbnylwsroxra:12#3$45)6G88@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+  con = create_engine("YOUR_URL_DATABASE")
+  
   df = pd.read_sql(f'select * from "{table}";', con)
   if table == "meeting":
       df = df[ df.meetStatus == True ]
