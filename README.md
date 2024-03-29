@@ -5,7 +5,7 @@ Code for building a data pipeline written in Python using  [Apache Airflow](http
 
 [การใช้งาน Apache Airflow บน Docker เบื้องต้น - DEV Community](https://dev.to/tanakritseangnet/apache-airflow-docker-5c9o)
 
-- Then, You only copy my DAGs file; after that, set up the connection with the database. The method depends on your service.
+- Then, You only copy my DAGs file name is first_dag.py; after that, set up the connection with the database. The method depends on your service.
 
 - access [http://localhost:8080/](http://localhost:8080/) to monitor the pipeline
 
